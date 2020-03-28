@@ -1,0 +1,53 @@
+//installer virtual env
+pip install virtualenv(pour travailleren groupe )
+{dans l virtual env il va générer un fichier qui contient tous les requierments packages pour que l autre personne fait juste copier coller sans reinstaller les packages}
+c koi pip?
+
+//
+vertiualenv env(env est le nom)
+
+//activer l'environnement
+'env\Scripts\activate.bat'
+
+//
+pip3 install flask flask sqlalchemy
+
+//Template inheritence
+
+//import db object
+db.create_all() #create our database
+//Jinja2 
+ Template agent that flask uses
+
+ {% %}=> for if else statements and for loops
+ {{ }}=> takes the code and give the result as string
+ url_for('')=> function from flask
+
+ //Set up the data base
+
+ //Heroku
+ heroku login
+ #install a dependency
+ pip3 install gunicorn
+ #freeze our requierments
+ pip3 freeze > requierments.text #it's gonna spit our all requierments in the text fiel
+#initialize our empty git reposotory
+ git init #create an empty get reposetory
+#Add everythink in the directory
+git add .
+#Comit
+git commit -m "Init app"
+#Create our web app
+heroku create app_name
+#See where we are pushing
+git remote -v
+#Create a file that tells heroku where to push all these files  to tell him what to do with the directory of files
+touch Procfile
+#in the Proc file we write
+web: gunicorn app:app#call the web server : what file to create a web server for
+#
+got add
+#
+git commit -m "Added procfile"
+#push everythink to heroku
+git push heroku master
