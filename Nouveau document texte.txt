@@ -46,7 +46,7 @@ touch Procfile
 #in the Proc file we write
 web: gunicorn app:app#call the web server : what file to create a web server for
 #
-got add
+got add .
 #
 git commit -m "Added procfile"
 #push everythink to heroku
